@@ -2,6 +2,7 @@ package com.example.test2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class ItemsActivity : AppCompatActivity() {
@@ -24,5 +25,8 @@ class ItemsActivity : AppCompatActivity() {
         items.add(Item(8, "due", "Arduino Due", "Arduino Due - первая плата Arduino на базе ARM", "Arduino Due - это плата на базе 32-битного ядра ARM. Она имеет 54 цифровых входных/выходных пина, 12 аналоговых входов, 4 UART порта.", 3500))
         items.add(Item(9, "yun", "Arduino Yun", "Arduino Yun - плата с Wi-Fi и Linux", "Arduino Yun - это плата на базе микроконтроллера ATmega32u4 и Atheros AR9331. Она поддерживает Wi-Fi и Linux, что позволяет создавать сложные IoT проекты.", 5000))
         items.add(Item(10, "mkr1000", "Arduino MKR1000", "Arduino MKR1000 - плата с Wi-Fi для IoT проектов", "Arduino MKR1000 - это плата, разработанная специально для IoT проектов. Она имеет встроенный модуль Wi-Fi и позволяет легко подключаться к интернету.", 3000))
+
+        itemsList.layoutManager = LinearLayoutManager(this)
+        itemsList.adapter = ItemsAdapter(items, this)
     }
 }
