@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#e2a608"
+    android:background="#87CEFA"
     tools:context=".ItemActivity">
 
     <TextView
@@ -32,7 +32,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="#FDBD10"
+        android:backgroundTint="#0a0a23"
         android:text="Купить" />
 
 </LinearLayout>

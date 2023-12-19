@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E2A608"
+    android:background="#87CEFA"
     tools:context=".AuthActivity">
 
     <TextView
@@ -52,7 +52,7 @@
         android:textColor="#fff"
         android:textSize="16sp"
         android:layout_gravity="center"
-        android:backgroundTint="#201E28"
+        android:backgroundTint="#0a0a23"
         android:layout_marginTop="30dp"  />
 
     <TextView

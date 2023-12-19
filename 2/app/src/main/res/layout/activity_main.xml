@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#201E28"
+    android:background="#0a0a23"
     tools:context=".MainActivity">
 
     <TextView
@@ -64,7 +64,7 @@
         android:textColor="#5e4602"
         android:textSize="16sp"
         android:layout_gravity="center"
-        android:backgroundTint="#E2A608"
+        android:backgroundTint="#87CEFA"
         android:layout_marginTop="30dp"  />
 
     <TextView
