@@ -37,7 +37,7 @@ class ItemsAdapter(var items: List<Item>, var context: Context) : RecyclerView.A
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.title.text = items[position].title
         holder.desc.text = items[position].desc
-        holder.price.text = items[position].price.toString() + "$"
+        holder.price.text = items[position].price.toString() + " Руб"
 
         // Получение идентификатора изображения из ресурсов
         var imageId = context.resources.getIdentifier(
