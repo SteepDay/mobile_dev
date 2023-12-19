@@ -1,0 +1,57 @@
+@startuml
+class com.example.test2.AuthActivity {
++ void onCreate(Bundle?)
+}
+class com.example.test2.ItemActivity {
++ void onCreate(Bundle?)
+}
+class com.example.test2.ItemsAdapter$MyViewHolder {
++ ImageView image
++ TextView title
++ TextView desc
++ TextView price
++ Button btn
++ <<Create>> MyViewHolder(View)
+}
+class com.example.test2.ItemsAdapter {
++ <<Create>> ItemsAdapter(List<Item>,Context)
++ MyViewHolder onCreateViewHolder(ViewGroup,Int)
++ Int getItemCount()
++ void onBindViewHolder(MyViewHolder,Int)
+}
+class com.example.test2.ItemsActivity {
++ void onCreate(Bundle?)
+}
+class com.example.test2.MainActivity {
++ void onCreate(Bundle?)
+}
+class com.example.test2.ChatActivity {
+- ChatAdapter chatAdapter
+-  messages
+- Bot bot
++ void onCreate(Bundle?)
+- void handleTextMessage(Bot,Update)
+}
+class com.example.test2.ChatAdapter$MessageViewHolder {
++ TextView messageText
++ <<Create>> MessageViewHolder(View)
+}
+class com.example.test2.ChatAdapter$Message {
++ <<Create>> Message(String)
+}
+class com.example.test2.ChatAdapter {
++ <<Create>> ChatAdapter(List<Message>)
++ MessageViewHolder onCreateViewHolder(ViewGroup,Int)
++ Int getItemCount()
++ void onBindViewHolder(MessageViewHolder,Int)
+}
+class com.example.test2.DBHelper {
++ <<Create>> DBHelper(Context,SQLiteDatabase.CursorFactory?)
+}
+class com.example.test2.Item {
++ <<Create>> Item(Int,String,String,String,String,Int)
+}
+class com.example.test2.User {
++ <<Create>> User(String,String,String)
+}
+@enduml

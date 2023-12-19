@@ -1,5 +1,8 @@
 package com.example.test2
 
-class User(val login: String, val email: String, val pass: String) {
-
-}
+// Класс пользователя
+class User(
+    val login: String, // Логин пользователя
+    val email: String, // Электронная почта пользователя
+    val pass: String   // Пароль пользователя
+)
