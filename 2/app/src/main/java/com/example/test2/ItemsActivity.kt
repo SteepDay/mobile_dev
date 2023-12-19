@@ -1,7 +1,9 @@
 package com.example.test2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -12,8 +14,12 @@ class ItemsActivity : AppCompatActivity() {
 
         val itemsList: RecyclerView = findViewById(R.id.itemsList)
         val items = arrayListOf<Item>()
+        val linkToChat: TextView = findViewById(R.id.link_to_chat)
 
-
+        linkToChat.setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+        }
 
         items.add(Item(1, "wifi", "Arduino с Wi-Fi модулем для IoT проектов", "Набор датчиков для IoT проектов на Arduino", "Arduino с Wi-Fi модулем ESP8266 позволяет разрабатывать различные IoT проекты, включая управление умными устройствами, сбор и передачу данных[^1^][3].", 1500))
         items.add(Item(2, "sensors", "Набор датчиков для Arduino", "Набор датчиков для IoT проектов на Arduino", "Набор датчиков для Arduino, включающий датчики температуры, влажности, освещенности и другие, позволяет создавать разнообразные IoT системы[^2^][2].", 1500))

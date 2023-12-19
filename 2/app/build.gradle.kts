@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-    implementation ("com.github.kotlintelegrambot:telegram:0.30.0")
+    implementation ("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.0.7")
     implementation("com.razorpay:checkout:1.6.26")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
